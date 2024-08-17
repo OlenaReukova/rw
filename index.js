@@ -1,7 +1,8 @@
-//Accept an Input Array
 function fizzBuzz(array) {
-  let output = [];
   return array.map((num) => {
+    if (typeof num !== 'number') {
+      return num;
+    }
     if (num % 15 === 0) {
       return 'FizzBuzz';
     } else if (num % 3 === 0) {
